@@ -83,6 +83,18 @@ function verbing(str) {
   console.log(verbing('reading'));  
   console.log(verbing('go'));        
   
+// nothing
+var n=2;
+function square(num){
+    return num*num;
 
+}
+function cube(num){
+    return num*num*num;
+}
+var squre1=square(n);
+console.log(squre1);
+ var  cube1=cube(2);
+ console.log(cube1);
 
 

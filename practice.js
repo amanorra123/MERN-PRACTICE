@@ -1,3 +1,4 @@
+
 // 1.find maximum number.
 const numbers=[11,12,44,9,4];
 const  maximum=Math.max(...numbers);
@@ -98,3 +99,35 @@ console.log(squre1);
  console.log(cube1);
 
 
+const radiuses=[3,4,8,9,12]
+function circumference(r){
+     return(3.14*r*2);
+}
+
+function area(r){
+   return (3.14*r*r*r);
+}
+function diameter(r){
+    return (2*r);
+
+}
+
+const arr=radiuses.map(area);
+const circum=radiuses.map(circumference);
+const dia=radiuses.map(diameter);
+
+console.log(arr);
+
+console.log(circum);
+
+console.log(dia);
+
+//  return  binary
+const list=[1,2,3,4];
+
+function binary(num){
+  return num.toString(2); 
+}
+
+ const bi=list.map(binary);
+ console.log(bi);

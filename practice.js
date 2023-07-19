@@ -63,3 +63,26 @@ if(temp==str){
 else{
     console.log("not palindrom");
 }
+
+
+// verbing
+// if greater the 3 add ing
+//  if alreadyming then add ly
+// if latter less than 3  unchanged.
+
+function verbing(str) {
+    if (str.length < 3) {
+      return str; 
+    } else if (str.slice(-3) === 'ing') {
+      return str + 'ly'; 
+    } else {
+      return str + 'ing'; 
+    }
+  }
+  console.log(verbing('read'));      
+  console.log(verbing('reading'));  
+  console.log(verbing('go'));        
+  
+
+
+

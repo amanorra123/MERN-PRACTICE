@@ -42,8 +42,55 @@ const treduce = transactions.reduce((accumulator,num)=>
     return(accumulator+num.amount);
   }
   else{
-    return(accumulator-num.amount);
+    return(accumulator-num.amount); 
   }
 },0);
 console.log("balance "+ treduce);
 
+
+// 
+
+async function fetchData(){
+  return new Promise((resolve)=>{
+    setTimeout(() => {
+      const data={ name:'john',age:30};
+      resolve (data);
+        },2000);
+  });
+}
+async function getData(){
+  try{
+    const data = await fetchData();
+    console.log(data);
+  }
+  catch(error){
+    console.error(error);
+  }
+}
+getData();
+
+// 
+var add =function(x,y){
+  return new promises((resolve,reject )=>{
+    var sum=x+y;
+  if(sum){
+    resolve(sum);
+
+  }
+  else{
+    reject(Error("could not add the two values"));
+  }
+  });
+};
+var subtrct=function(x,y){
+  return new promises((resolve,reject)=>{
+        var sum=x-y;
+        if(sum){
+          resolve(sum);
+        }
+        else{
+          reject(Error("could not subtract the two values!"));
+        }
+
+  });
+}
